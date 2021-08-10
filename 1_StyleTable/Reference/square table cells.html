@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="shiloz" />
+    <title>Document</title>
+    <style>
+      table {
+        width: 90%;
+      }
+      td {
+        position: relative;
+        width: 33%;
+        /* padding-bottom: 33%; */
+        /* height: 0; */
+      }
+      td:after {
+  content: '';
+  display: block;
+  padding-top: 100%;
+}
+      td .content {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: gold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td><div class="content">1</div></td>
+        <td><div class="content">1</div></td>
+        <td><div class="content">1</div></td>
+      </tr>
+      <tr>
+        <td><div class="content">1</div></td>
+        <td><div class="content">1</div></td>
+        <td><div class="content">1</div></td>
+      </tr>
+      <tr>
+        <td><div class="content">1</div></td>
+        <td><div class="content">1</div></td>
+        <td><div class="content">1</div></td>
+      </tr>
+    </table>
+  </body>
+</html>
