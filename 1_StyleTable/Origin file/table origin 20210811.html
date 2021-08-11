@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1920, height=1080, initial-scale=1.0" />
     <meta name="reference" content="https://codepen.io/oliviale/pen/ZmvPPd" />
     <meta
       name="reference"
@@ -55,10 +55,7 @@
       table {
         overflow: hidden;
         width: 50vw;
-        /* height: 50vh; */
         border-spacing: 10px;
-        /* -webkit-border-horizontal-spacing: 10px;
-        -webkit-border-vertical-spacing: 10px; */
       }
 
       th,
@@ -239,7 +236,6 @@
       }
 
       .arr:hover p {
-        /* left: 8%; */
         left: 52%;
         color: brown;
       }
@@ -301,19 +297,14 @@
       }
       .arr2:hover .arrow2 {
         bottom: 13%;
-        /* opacity: 1; */
         background: brown;
       }
       .arr2:hover .arrow2:before {
         transform: translate(-50%, -50%) rotateZ(-45deg);
-        /* opacity: 1; */
-        /* color: brown; */
         background: brown;
       }
       .arr2:hover .arrow2:after {
         transform: translate(-50%, -91%) rotateZ(0deg);
-        /* opacity: 1; */
-        /* color: brown; */
         background: brown;
         width: 4px;
         height: 300px;
@@ -321,7 +312,6 @@
       }
 
       .arr2:hover p {
-        /* left: 8%; */
         bottom: 50%;
         color: brown;
       }
@@ -329,7 +319,6 @@
       .arrow2 {
         position: absolute;
         left: 50%;
-        /* bottom: 50%; */
         transition: 0.5s;
       }
       .arrow2:before,
@@ -365,45 +354,11 @@
   </head>
 
   <body>
-    <!-- <aside style="position: relative">
-      <div>
-        <div class="arrow-container">
-          <div class="arrow"></div>
-          <div class="arrow"></div>
-          <div class="arrow"></div>
-        </div>
-        <div>
-          <p
-            style="
-              align-self: end;
-              height: 10vh;
-              bottom: 30px;
-              left: 30px;
-              color: gray;
-              position: absolute;
-              writing-mode: vertical-rl;
-            "
-          >
-            Down the table: Time Spent
-          </p>
-        </div>
-      </div>
-    </aside> -->
     <div class="table">
       <!-- table>th+(tr*3>td*3)+tfoot -->
       <table>
-        <!-- table header -->
-        <!-- <thead>
-          <tr>
-            <th colspan="9">
-              <h1>My Internet Periodic Table</h1>
-              <p>How I waste my time on the Internet</p>
-            </th>
-          </tr>
-        </thead> -->
-        <!-- 1st tr -->
+        <!-- 0st tr (arrows vertical) -->
         <tr>
-          <!-- arrows vertical -->
           <td class="arr" rowspan="8">
             <div class="arrow-container">
               <div class="arrow"></div>
@@ -419,8 +374,9 @@
             <p>How I waste my time on the Internet</p>
           </th>
         </tr>
-        <!-- 1-1 -->
+        <!-- 1st tr -->
         <tr>
+          <!-- 1-1 -->
           <td class="orange cube">
             <div
               class="div1"
@@ -755,6 +711,7 @@
           </td>
         </tr>
 
+        <!-- 6th tr (arrows vertical) -->
         <tr>
           <td class="arr2" colspan="6">
             <div class="arrow-container2">
